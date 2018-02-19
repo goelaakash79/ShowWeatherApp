@@ -1,0 +1,43 @@
+*{
+    font-family: Comfortaa;
+}
+
+h1, h2, h3, span{
+    margin: 0;
+}
+
+#temp{
+    font-size: 16rem;
+    font-weight: 400;
+}
+
+#city{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+span{
+    font-size: 6rem;
+}
+
+.container{
+    max-width: 550px;
+    height: 80vh;
+    border: 3px solid #000;
+    margin: 40px auto;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    text-align: center;
+    padding: 25px 5px;
+}
+
+.degrees{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-left: 2rem;
+}
