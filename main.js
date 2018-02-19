@@ -6,6 +6,7 @@ $(document).ready(function(){
     function success(pos){
         var lat = pos.coords.latitude;
         var long = pos.coords.longitude;
+        console.log(lat + " " + long);
         weather(lat, long);
     }
 
@@ -26,8 +27,8 @@ $(document).ready(function(){
         var city = data.name;
         var temp = Math.round(data.main.temp);
         var desc = data.weather[0].description;
-        var icon = data.weather[0].icon; 
-        
+        var icon = data.weather[0].icon;
+
         $('#city').html(city);
         $('#temp').html(temp);
         $('#desc').html(desc.toUpperCase());
